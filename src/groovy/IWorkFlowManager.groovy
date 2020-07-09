@@ -1,4 +1,4 @@
-interface IWorkFlowManager<T, TState>
+interface IWorkFlowManager<T>
 {
     T runWorkFlowProcess();
 }

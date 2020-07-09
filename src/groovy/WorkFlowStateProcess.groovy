@@ -1,4 +1,4 @@
-class WorkFlowStateProcess<T, TState> implements IWorkFlowStateProcess<T, TState>
+class WorkFlowStateProcess<T, TState> implements IWorkFlowStateProcess<T>
 {
     T record
     TState currentState

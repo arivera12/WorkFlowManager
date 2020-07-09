@@ -1,6 +1,6 @@
 class TestWorkFlowManager
         extends WorkFlowManager<TestWorkflowModel, TestState>
-        implements IWorkFlowManager<TestWorkflowModel, TestState>
+        implements IWorkFlowManager<TestWorkflowModel>
 {
     TestWorkFlowManager(TestWorkflowModel record)
     {

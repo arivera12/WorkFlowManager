@@ -1,12 +1,12 @@
 class TestWorkFlowStateProcess1
         extends WorkFlowStateProcess<TestWorkflowModel, TestState>
-        implements IWorkFlowStateProcess<TestWorkflowModel, TestState>
+        implements IWorkFlowStateProcess<TestWorkflowModel>
 {
     TestWorkFlowStateProcess1(TestWorkflowModel testWorkflowModel)
     {
-        record = testWorkflowModel;
-        currentState = TestState.Step0;
-        nextState = TestState.Step1;
+        record = testWorkflowModel
+        currentState = TestState.Step0
+        nextState = TestState.Step1
     }
     @Override
     boolean proceedNextStateProcessWhen()
@@ -18,7 +18,7 @@ class TestWorkFlowStateProcess1
     TestWorkflowModel proceedNextStateProcess()
     {
         //We process our record and call our services then we change state
-        record.testState = nextState;
-        return record;
+        record.testState = nextState
+        return record
     }
 }
